@@ -14,21 +14,25 @@ const Selector = () => {
 
   const clickHandle = (e) => {
     const text = e.target.textContent;
-    const position = e.target.offsetLeft;
+    const position = {
+      x: e.target.offsetLeft,
+      y: e.target.offsetTop,
+    };
+    console.dir(e.target.offsetTop);
     const value = e.target.value;
     setRoll({ text, position, value });
-    setAnimateProps({ opacity: 1, left: position });
+    setAnimateProps({ opacity: 1, left: position.x + 10, top: position.y - 5 });
   };
 
   return (
     <div className='content'>
       <div className='icons'>
-        <Creator value={roll.value}/>
-        <User value={roll.value}/>
-        <Organization value={roll.value}/>
+        <Creator value={roll.value} />
+        <User value={roll.value} />
+        <Organization value={roll.value} />
       </div>
       <div className='buttons'>
-        <div style={{ marginRight: '30px' }}>Я: </div>
+        <div style={{ marginRight: '0px' }}>Я: </div>
         <animated.div className='activeRoll' style={animateProps}>
           {roll.text}
         </animated.div>
@@ -37,9 +41,13 @@ const Selector = () => {
           value='artist'
           onClick={(e) => clickHandle(e)}
         >
-          Митець
+          {'Митець ᠌ ᠌ ᠌᠌ ᠌ ᠌ ᠌'}
         </button>
-        <button value='user' onClick={(e) => clickHandle(e)}>
+        <button
+          value='user'
+          className='buttonUser'
+          onClick={(e) => clickHandle(e)}
+        >
           Поціновувач
         </button>
         <button

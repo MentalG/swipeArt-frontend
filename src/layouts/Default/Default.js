@@ -6,9 +6,9 @@ const Default = props => {
     const { children } = props;
 
     return (
-        <Layout>
+       <div>
           {children}
-        </Layout>
+        </div>
     );
 };
 
