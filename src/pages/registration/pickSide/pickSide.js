@@ -1,22 +1,28 @@
 import React from 'react';
-// import creator from '../../../icons/Creator.svg'
-import Creator from '../../../components/ui-kit/icons/Creator'
-import './styles.scss'
+import Selector from '../../../components/Selector'
+import './styles.scss';
 
-const pickSide = props => {
+const Header = () => {
+  return <div className='header'>Реєстрація/Вхід</div>;
+};
 
-    return (
-        <div className='wrapper'>
-        <div className='header'>Реєстрація/Вхід</div>
-        <div className='content'>
-            <div className='icons'>
-                {/* <img src={creator} width={'64px'} height={'64px'} color="#fff"/> */}
-                <Creator />
-            </div>
-        </div>
-        <div className='footer'>Footer</div>
-        </div>
-    );
+const Footer = () => {
+  return (
+    <div className='footer'>
+      <button className='registrationButton'>Зареєструватися</button>
+      <button className='signInButton'>Увійти</button>
+    </div>
+  );
+};
+
+const pickSide = (props) => {
+  return (
+    <div className='wrapper'>
+      <Header />
+      <Selector />
+      <Footer />
+    </div>
+  );
 };
 
 export default pickSide;

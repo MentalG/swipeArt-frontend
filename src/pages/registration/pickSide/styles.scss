@@ -1,18 +1,49 @@
 @import '../../../main.scss';
 
 .wrapper {
+  background: rgb(255, 218, 136);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 218, 136, 1) 15%,
+    rgba(243, 135, 123, 1) 50%,
+    rgba(225, 101, 114, 1) 75%,
+    rgba(64, 22, 101, 1) 100%
+  );
+  font-size: 32px;
+  font-family: 'Helvetica Neue Cyr Thin';
+  color: #ffffff;
+
   .header {
     height: 20vh;
-    font-family: 'Helvetica Neue Cyr Thin';
-    font-size: 32px;
-  }
-
-  .content {
-    height: 60vh;
   }
 
   .footer {
     height: 20vh;
+    flex-direction: column;
+
+    .registrationButton {
+      font-family: 'Helvetica Neue Cyr Bold';
+      cursor: pointer;
+      width: 500px;
+      border-radius: 30px;
+      font-weight: 900;
+      border: none;
+      outline: none;
+      background: rgb(225, 101, 114);
+      background: linear-gradient(
+        90deg,
+        rgba(225, 101, 114, 1) 0%,
+        rgba(243, 135, 123, 1) 50%,
+        rgba(255, 218, 136, 1) 100%
+      );
+    }
+
+    .signInButton {
+      cursor: pointer;
+      background-color: transparent;
+      border: none;
+      outline: none;
+    }
   }
 
   .header,
