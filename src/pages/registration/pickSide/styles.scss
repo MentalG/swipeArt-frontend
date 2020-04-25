@@ -1,0 +1,25 @@
+@import '../../../main.scss';
+
+.wrapper {
+  .header {
+    height: 20vh;
+    font-family: 'Helvetica Neue Cyr Thin';
+    font-size: 32px;
+  }
+
+  .content {
+    height: 60vh;
+  }
+
+  .footer {
+    height: 20vh;
+  }
+
+  .header,
+  .content,
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
