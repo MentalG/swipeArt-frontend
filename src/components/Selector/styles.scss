@@ -10,7 +10,26 @@
     margin-bottom: 20px;
 
     .activeRoll {
-        position: absolute;
+      font-family: 'Helvetica Neue Cyr Roman';
+      font-size: 18px;
+      position: absolute;
+      background: rgb(242, 83, 255);
+      background: linear-gradient(
+        90deg,
+        rgba(242, 83, 255, 1) 0%,
+        rgba(64, 22, 101, 1) 100%
+      );
+      opacity: 1;
+      left: 741px;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      height: 75px;
+      border-radius: 50px;
+      padding: 0px 40px 0px 40px;
+      margin-left: -10px;
+      top: 417px;
     }
 
     .buttonArtist {
