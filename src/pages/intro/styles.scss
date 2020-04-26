@@ -31,15 +31,16 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: rgb(255, 194, 188);
+    background: rgb(255, 151, 188);
     background: linear-gradient(
       180deg,
-      rgba(255, 194, 188, 1) 0%,
+      rgba(255, 151, 188, 1) 0%,
       rgba(195, 77, 113, 1) 50%,
-      rgba(179, 22, 77, 1) 100%
+      rgba(64, 22, 79, 1) 100%
     );
     .theaterImg {
       margin-bottom: 55px;
+      margin-top: 180px;
     }
 
     .theaterText {
@@ -51,18 +52,221 @@
     }
 
     .progressBarWrapper {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      
-        .dot {
-          width: 40px;
-          height: 40px;
-          margin: 0px 10px;
-          border: 1px solid white;
-          border-radius: 100%;
-        }
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .dot {
+        width: 40px;
+        height: 40px;
+        margin: 0px 10px 80px 0px;
+        border: 1px solid white;
+        border-radius: 100%;
       }
-      
+    }
+
+    .TeaterSwipe {
+      width: 332px;
+      height: 50px;
+      outline: none;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      font-family: 'Helvetica Neue Cyr Bold';
+      font-size: 23px;
+      color: white;
+      background: rgb(255, 194, 188);
+      background: linear-gradient(
+        240deg,
+        rgba(255, 194, 188, 1) 0%,
+        rgba(195, 77, 113, 1) 50%,
+        rgba(179, 22, 77, 1) 100%
+      );
+    }
+  }
+
+  .artistWrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgb(247, 173, 235);
+    background: linear-gradient(
+      180deg,
+      rgba(247, 173, 235, 1) 0%,
+      rgba(208, 90, 229, 1) 50%,
+      rgba(64, 22, 101, 1) 100%
+    );
+    .artistImg {
+      margin-bottom: 55px;
+      margin-top: 180px;
+    }
+
+    .artistText {
+      font-family: 'Helvetica Neue Cyr Light';
+      font-size: 23px;
+      color: white;
+      text-align: center;
+      margin-bottom: 45px;
+    }
+
+    .progressBarWrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .dot {
+        width: 40px;
+        height: 40px;
+        margin: 0px 10px 80px 0px;
+        border: 1px solid white;
+        border-radius: 100%;
+      }
+    }
+
+    .artistSwipe {
+      width: 332px;
+      height: 50px;
+      outline: none;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      font-family: 'Helvetica Neue Cyr Bold';
+      font-size: 23px;
+      color: white;
+      background: rgb(225, 26, 239);
+      background: linear-gradient(
+        90deg,
+        rgba(225, 26, 239, 1) 0%,
+        rgba(231, 90, 229, 1) 50%,
+        rgba(247, 196, 235, 1) 100%
+      );
+    }
+  }
+
+  //   Singer
+  .singerWrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgb(159, 227, 179);
+    background: linear-gradient(
+      180deg,
+      rgba(159, 227, 179, 1) 0%,
+      rgba(140, 219, 175, 1) 50%,
+      rgba(0, 88, 101, 1) 100%
+    );
+    .singerImg {
+      margin-bottom: 55px;
+      margin-top: 180px;
+    }
+
+    .singerText {
+      font-family: 'Helvetica Neue Cyr Light';
+      font-size: 23px;
+      color: white;
+      text-align: center;
+      margin-bottom: 45px;
+    }
+
+    .progressBarWrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .dot {
+        width: 40px;
+        height: 40px;
+        margin: 0px 10px 80px 0px;
+        border: 1px solid white;
+        border-radius: 100%;
+      }
+    }
+
+    .singerSwipe {
+      width: 332px;
+      height: 50px;
+      outline: none;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      font-family: 'Helvetica Neue Cyr Bold';
+      font-size: 23px;
+      color: white;
+      background: rgb(211, 255, 255);
+      background: linear-gradient(
+        240deg,
+        rgba(211, 255, 255, 1) 0%,
+        rgba(148, 219, 220, 1) 50%,
+        rgba(38, 183, 160, 1) 100%
+      );
+    }
+  }
+
+  //   Guitar
+  .guitarWrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgb(175, 255, 255);
+    background: linear-gradient(
+      180deg,
+      rgba(175, 255, 255, 1) 0%,
+      rgba(59, 191, 225, 1) 50%,
+      rgba(0, 44, 103, 1) 100%
+    );
+    .guitarImg {
+      margin-bottom: 55px;
+      margin-top: 180px;
+    }
+
+    .guitarText {
+      font-family: 'Helvetica Neue Cyr Light';
+      font-size: 23px;
+      color: white;
+      text-align: center;
+      margin-bottom: 45px;
+    }
+
+    .progressBarWrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .dot {
+        width: 40px;
+        height: 40px;
+        margin: 0px 10px 80px 0px;
+        border: 1px solid white;
+        border-radius: 100%;
+      }
+    }
+
+    .guitarSwipe {
+      width: 332px;
+      height: 50px;
+      outline: none;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      font-family: 'Helvetica Neue Cyr Bold';
+      font-size: 23px;
+      color: white;
+      background: rgb(203, 255, 255);
+      background: linear-gradient(
+        240deg,
+        rgba(203, 255, 255, 1) 0%,
+        rgba(80, 255, 235, 1) 50%,
+        rgba(59, 109, 255, 1) 100%
+      );
+    }
   }
 }
