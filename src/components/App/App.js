@@ -11,8 +11,8 @@ const App = () => {
   return (
     <Provider store={store}>
       <Router>
-        <AppRoute path='/' component={Intro} exact />
-        <AppRoute path='/registration/roll' component={PickSide} />
+        <AppRoute path='/' component={PickSide} exact />
+        {/* <AppRoute path='/registration/roll' component={PickSide} /> */}
       </Router>
     </Provider>
   );
