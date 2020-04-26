@@ -1,1 +1,1 @@
-export { default } from './pickSide'
+export { default } from './PickSide'

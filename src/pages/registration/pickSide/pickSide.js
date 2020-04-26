@@ -15,7 +15,7 @@ const Footer = () => {
   );
 };
 
-const pickSide = (props) => {
+const PickSide = (props) => {
   return (
     <div className='wrapper'>
       <Header />
@@ -25,4 +25,4 @@ const pickSide = (props) => {
   );
 };
 
-export default pickSide;
+export default PickSide;

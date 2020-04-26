@@ -1,0 +1,68 @@
+.Intro {
+  width: 100%;
+  height: 100vh;
+
+  .welcomeWrapper {
+    width: 100%;
+    height: 100vh;
+
+    .logoWrappeer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 90vh;
+    }
+
+    .SwipetoArt {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Helvetica Neue Cyr Roman';
+      font-size: 18px;
+      color: #401665;
+      height: 10vh;
+    }
+  }
+
+  .theaterWrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgb(255, 194, 188);
+    background: linear-gradient(
+      180deg,
+      rgba(255, 194, 188, 1) 0%,
+      rgba(195, 77, 113, 1) 50%,
+      rgba(179, 22, 77, 1) 100%
+    );
+    .theaterImg {
+      margin-bottom: 55px;
+    }
+
+    .theaterText {
+      font-family: 'Helvetica Neue Cyr Light';
+      font-size: 23px;
+      color: white;
+      text-align: center;
+      margin-bottom: 45px;
+    }
+
+    .progressBarWrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      
+        .dot {
+          width: 40px;
+          height: 40px;
+          margin: 0px 10px;
+          border: 1px solid white;
+          border-radius: 100%;
+        }
+      }
+      
+  }
+}

@@ -1,5 +1,4 @@
 import React from 'react';
-import Gradient from '../Gradient';
 
 const Creator = (props) => {
   const { value } = props;
