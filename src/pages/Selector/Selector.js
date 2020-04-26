@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import Creator from '../ui-kit/icons/Creator';
-import User from '../ui-kit/icons/User';
-import Organization from '../ui-kit/icons/Organization';
+import Creator from '../../components/ui-kit/icons/Creator';
+import User from '../../components/ui-kit/icons/User';
+import Organization from '../../components/ui-kit/icons/Organization';
 import { useSpring, animated } from 'react-spring';
 import './styles.scss';
 
