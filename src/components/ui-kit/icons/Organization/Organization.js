@@ -1,10 +1,15 @@
 import React from 'react';
 
-const Organization = props => {
-  const { value } = props
+const Organization = (props) => {
+  const { value } = props;
 
   return (
-    <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 149.16 149.16' width='64px'>
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      viewBox='0 0 149.16 149.16'
+      width='50px'
+      height='50px'
+    >
       <defs />
       <path
         fill={value === 'institution' ? '#401665' : '#fff'}

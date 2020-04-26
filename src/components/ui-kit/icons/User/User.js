@@ -1,10 +1,15 @@
 import React from 'react';
 
-const Creator = props => {
-  const { value } = props
+const Creator = (props) => {
+  const { value } = props;
 
   return (
-    <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 132.86 159.25' width='64px'>
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      viewBox='0 0 132.86 159.25'
+      width='50px'
+      height='50px'
+    >
       <defs />
       <path
         fill={value === 'user' ? '#401665' : '#fff'}

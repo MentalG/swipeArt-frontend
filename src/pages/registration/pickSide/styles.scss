@@ -9,12 +9,14 @@
     rgba(225, 101, 114, 1) 75%,
     rgba(64, 22, 101, 1) 100%
   );
-  font-size: 32px;
-  font-family: 'Helvetica Neue Cyr Thin';
-  color: #ffffff;
+  // font-size: 32px;
+  // font-family: 'Helvetica Neue Cyr Thin';
+  // color: #ffffff;
 
   .header {
+    font-size: 23px;
     height: 20vh;
+    color: white;
   }
 
   .footer {
@@ -22,11 +24,14 @@
     flex-direction: column;
 
     .registrationButton {
-      width: 365px;
+      color: white;
+      width: 316px;
+      height: 51px;
       font-family: 'Helvetica Neue Cyr Bold';
+      margin-bottom: 21px;
+      font-size: 23px;
       cursor: pointer;
       border-radius: 30px;
-      font-weight: 900;
       border: none;
       outline: none;
       background: rgb(225, 101, 114);
@@ -39,7 +44,10 @@
     }
 
     .signInButton {
+      font-family: 'Helvetica Neue Cyr Roman';
+      font-size: 16px;
       cursor: pointer;
+      color: white;
       background-color: transparent;
       border: none;
       outline: none;

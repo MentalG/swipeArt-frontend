@@ -7,12 +7,22 @@
   .text,
   .buttons {
     display: flex;
-    margin-bottom: 20px;
-    height: 50px;
+    font-family: 'Helvetica Neue Cyr Roman';
+    font-size: 13px;
+    margin-bottom: 45px;
+    // height: 50px;
+
+    .im {
+      font-family: 'Helvetica Neue Cyr Light';
+      color: white;
+      font-size: 23px;
+      margin-right: 25px;
+    }
 
     .activeRoll {
-      font-family: 'Helvetica Neue Cyr Roman';
-      font-size: 14px;
+      width: 91px;
+      height: 45px;
+      color: white;
       position: absolute;
       background: rgb(242, 83, 255);
       background: linear-gradient(
@@ -20,16 +30,16 @@
         rgba(242, 83, 255, 1) 0%,
         rgba(64, 22, 101, 1) 100%
       );
-      opacity: 1;
+      //   opacity: 1;
       display: flex;
       justify-content: center;
       text-align: center;
       align-items: center;
-      height: 60px;
+      //   height: 60px;
       border-radius: 50px;
-      margin-left: -11px;
-      width: 110px;
-      top: 347px;
+      //   margin-left: -11px;
+      //   width: 110px;
+      //   top: 347px;
     }
 
     .buttonArtist {
@@ -46,9 +56,11 @@
     button {
       outline: none;
       cursor: pointer;
-      padding: 0px 20px;
-      font-family: 'Helvetica Neue Cyr Roman';
-      font-size: 14px;
+      width: 91px;
+      height: 37px;
+      //   padding: 0px 20px;
+      //   font-family: 'Helvetica Neue Cyr Roman';
+      //   font-size: 14px;
       border: none;
       background-color: white;
       color: #401665;
@@ -58,18 +70,22 @@
   .icons {
     display: flex;
     justify-content: center;
-    margin-left: 28px;
+    margin-bottom: 25px;
     svg {
-        margin-left: 25px;
-        margin-right: 25px;
+      margin-left: 46px;
     }
   }
 
   .text {
+    font-family: 'Helvetica Neue Cyr Light';
+    font-size: 16px;
+    width: 272px;
+    height: 60px;
     display: flex;
     justify-content: center;
     text-align: center;
-    line-height: 23px;
-    font-size: 23px;
+    color: white;
+    // line-height: 23px;
+    // font-size: 23px;
   }
 }

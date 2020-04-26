@@ -9,7 +9,7 @@ const Selector = () => {
   const [roll, setRoll] = useState({});
   const [animateProps, setAnimateProps] = useSpring(() => ({
     opacity: 0,
-    left: 360,
+    left: 0,
   }));
 
   const clickHandle = (e) => {
@@ -21,7 +21,7 @@ const Selector = () => {
     console.dir(e.target.offsetTop);
     const value = e.target.value;
     setRoll({ text, position, value });
-    setAnimateProps({ opacity: 1, left: position.x + 10, top: position.y - 5 });
+    setAnimateProps({ opacity: 1, left: position.x, top: position.y - 4 });
   };
 
   return (
@@ -32,31 +32,33 @@ const Selector = () => {
         <Organization value={roll.value} />
       </div>
       <div className='buttons'>
-        <div style={{ marginRight: '0px' }}>Я: </div>
+        <div className='im'>Я: </div>
         <animated.div className='activeRoll' style={animateProps}>
           {roll.text}
         </animated.div>
-        <button
-          className='buttonArtist'
-          value='artist'
-          onClick={(e) => clickHandle(e)}
-        >
-          {'Митець ᠌ ᠌ ᠌᠌ ᠌ ᠌ ᠌'}
-        </button>
-        <button
-          value='user'
-          className='buttonUser'
-          onClick={(e) => clickHandle(e)}
-        >
-          Поціновувач
-        </button>
-        <button
-          value='institution'
-          className='buttonInstitution'
-          onClick={(e) => clickHandle(e)}
-        >
-          Установа
-        </button>
+        <div>
+          <button
+            className='buttonArtist'
+            value='artist'
+            onClick={(e) => clickHandle(e)}
+          >
+            Митець
+          </button>
+          <button
+            value='user'
+            className='buttonUser'
+            onClick={(e) => clickHandle(e)}
+          >
+            Поціновувач
+          </button>
+          <button
+            value='institution'
+            className='buttonInstitution'
+            onClick={(e) => clickHandle(e)}
+          >
+            Установа
+          </button>
+        </div>
       </div>
       <div className='text'>
         Театр, музей, галерея та будь яка інша культурна установа на відстані
